@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Invoice</title>
+		<link rel="stylesheet" href="bills.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="bills.js"></script>
+	</head>
+	<body>
+		<nav class="top">
+            <div class="menu">
+              <div class="logo">
+                <a href="index.html">Thirumalai Rajan Textiles</a>
+              </div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sales.php">Orders</a></li>
+                <li><a href="product.php">Products</a></li>
+                <li><a href="category.php">Alter prices</a></li>
+                <li><a href="home.html">Log out</a></li>
+              </ul>
+            </div>
+        </nav>
+		<div id="pdf1">
+		<header>
+			<h1>THIRUMALAI RAJAN TEXTILES</h1>
+			<address contenteditable>
+				<p>8/138 society street</p>
+				<p>Vennandhur<br>Namakkal[Dt]</p>
+				<p>637505</p>
+			</address>
+		</header>
+		<article>
+			<h1>Recipient</h1>
+			<table class="meta">
+				<tr>
+					<th><span contenteditable>Invoice #</span></th>
+					<td><span contenteditable>101138</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>Date</span></th>
+					<td><span contenteditable><p id="date1"></p></span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>Amount Due</span></th>
+					<td><span id="prefix" contenteditable></span><span>0.00</span></td>
+				</tr>
+			</table>
+			<table class="trans_details">
+				<tr>
+					<th><span contenteditable>LR no</span></th>
+					<td><span contenteditable></span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>No of Bale :</span></th>
+					<td><span contenteditable><p ></p></span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>Transport :</span></th>
+					<td><span id="prefix" contenteditable></span><span></span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span contenteditable>Item</span></th>
+						<th><span contenteditable>Rate</span></th>
+						<th><span contenteditable>Quantity</span></th>
+						<th><span contenteditable>Price</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a class="cut">-</a>
+							<span contenteditable><input style="width: 300px; height: 25px; padding: 0px;" type="text" id="productname" name="productname">
+							<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+							<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+							<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+							<script type="text/javascript" src="ser.js"></script></span></td>
+						<td><span contenteditable>0.00</span></td>
+						<td><span contenteditable>0</span></td>
+						<td><span>0.00</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="add">+</a>
+			<table class="balance">
+				<tr>
+					<th><span contenteditable>Total without GST</span></th>
+					<td><span>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >CGST</span></th>
+					<td><span contenteditable>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >SGST</span></th>
+					<td><span contenteditable>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >IGST</span></th>
+					<td><span contenteditable>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >Total including GST</span></th>
+					<td><span contenteditable>0.00</span></td>
+				</tr>
+			</table>
+		</article>
+	</div>
+	</body>
+</html>
